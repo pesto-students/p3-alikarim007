@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: bisque;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.paraTop1{
+    position: relative;
+    width: 30vw;
+    height: 30vh;
+    background-color: rgb(219, 132, 24);
+    margin: 25px;
+}
+
+.paraTop2{
+    width: 30vw;
+    height: 30vh;
+    background-color: rgb(70, 43, 10);
+    position: relative; 
+    margin: 25px;   
+}
