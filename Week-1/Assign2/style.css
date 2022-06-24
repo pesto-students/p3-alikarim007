@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+/* c */
+body{
+font-family: 'Lato', sans-serif;
+margin: 0;
+padding: 0;
+background-color: burlywood;
+}
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #838080;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #eee8e8;
+  }
+
+  .header{
+      margin: 0px;
+      display: flex;
+      flex-direction: row;
+      background-color: #828981;      
+  }
+  .header-image{
+    justify-content: left;
+    padding: 0px auto 10px 20px;
+  }
+  .header-text{
+    font-size: .8em;
+    justify-content: left;
+    text-align: left;
+  }
+  .header-music-control{
+    margin-top: 70px;
+  }
+  .header-space{
+    padding: 0px 15px;
+  }
+  .sec-table{
+      margin: 5px;
+      padding: auto;
+      width: auto;
+      background-color: aqua;
+  }
+  .footer{
+      position: relative;
+      margin-top: 200px;
+      width: 100%;    
+      background-color: rgb(106, 22, 184);
+      display: flex;
+      align-items: right;
+  }
+  .footer-image{
+    padding: 10px 10px;
+  }
+  #footer-music-control{
+    position: relative;
+    top: 30px;
+    left: 40%;
+    max-width: 700px;
+    align-items: right;
+    font-size: xx-large;
+    white-space: 10px;
+  }
+  .space{
+    padding: 0px 35px;
+  }
+  .sidebar{
+    height: 100vh;
+    max-width: 2%;
+    padding-left: 10px;    
+    align-items:  center;
+    position: absolute;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    background-color: rgb(185, 183, 183);
+    padding-top: 16px;
+  }
+  .bar-space{
+    padding: 25px 0px;
+  }
+  .main { 
+    padding-left: 6vh;
+    background-color: rgb(232, 243, 243);
+  }
