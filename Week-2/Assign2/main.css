@@ -18,7 +18,7 @@ div#main {
   }
   div#main:hover .red {
     transform: rotate(90deg);
-    transition: transform 1s linear;
+    transition: transform 1s ;
     transform-origin: top left;
     width: 100px;
     height: 100px;
@@ -35,7 +35,7 @@ div#main {
   div#main:hover .yellow {
     transform-origin: bottom left;
     transform: rotate(-90deg);
-    transition: transform 1s linear;
+    transition: transform 1s ;
     width: 100px;
     height: 100px;
   }
@@ -51,7 +51,7 @@ div#main {
   div#main:hover .blue {
     transform-origin: top right;
     transform: rotate(-90deg);
-    transition: transform 1s linear;
+    transition: transform 1s ;
     width: 100px;
     height: 100px;
   }
@@ -67,7 +67,7 @@ div#main {
   div#main:hover .green {
     transform-origin: bottom right;
     transform: rotate(90deg);
-    transition: transform 1s linear;
+    transition: transform 1s ;
     width: 100px;
     height: 100px;
   }
