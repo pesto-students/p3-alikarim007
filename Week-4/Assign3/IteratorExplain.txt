@@ -12,3 +12,5 @@ An object may be both an iterable and an iterator. When this is the case, the me
 
 ITERABLE/ITERATOR EXAMPLE
 The following example generates numbers in the Fibonacci sequence. The object referred to by the variable fibonacci is an iterable. The Symbol.iterator method returns an iterator. Use of the fibonacci variable is illustrated with a for-of loop. Note that this loop breaks out when a value greater than 100 is returned. This is necessary since the sequence is infinite.
+
+https://objectcomputing.com/resources/publications/sett/javascript-iterators-and-generators
