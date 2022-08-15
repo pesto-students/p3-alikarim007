@@ -1,5 +1,5 @@
 function maximumSubArray(array,size){
-    var maxTillNow=0, maxTillHere=0, start =0, end=0, s=0;
+    var maxTillNow=Number.MIN_VALUE, maxTillHere=0, start =0, end=0, s=0;
       
     for(i=0;i<size;i++){
         maxTillHere = maxTillHere + array[i];
@@ -15,7 +15,7 @@ function maximumSubArray(array,size){
             s = i+1;
         }
     }
-    console.log("maximum sum is "+ maxTillHere);
+    console.log("maximum sum is "+ maxTillNow);
     console.log("start is "+ start);
     console.log("end is "+ end);
 }
