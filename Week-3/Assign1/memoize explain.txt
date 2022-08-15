@@ -1,0 +1,31 @@
+What memoization does
+Here’s a brief and accurate explanation I found on function memoization:
+
+“Memoization is an optimization technique where expensive function calls are cached such that the result can be immediately returned the next time the function is called with the same arguments”. — Jonathan Lehman, JavaScript Function Memoization
+I might elaborate by saying something like: memoization helps speed up function calls by storing previously computed results in a JavaScript object, aka cache. In other words, every time our memoize method is executed, one of two things can occur:
+
+If the input has been used before, locate it in cache and immediately return the value stored without executing any further computations.
+Use the input to execute any necessary computations, store the results in cache, return the result.
+A simple memoization example
+Let’s build a simple memoize function, similar to the one shown above, in order to demonstrate.
+
+First let’s define our function using ES6. As a parameter, it will accept a function, fn, to be used for computations.
+
+const memoize = (fn) => {}
+Next let’s declare an initial cache object.
+
+const memoize = (fn) => {
+   let cache = {}
+}
+Great. Now let’s actually return something. We will first implement possibility #1 — “If the input has been used before, locate it in cache and immediately return the value stored without executing any further computations.”
+
+const memoize = (fn) => {
+   let cache = {}
+   return (n) => {
+      if (n in cache){
+         return cache[n]
+      }
+}
+Let’s review. First of all, memoize has officially become a higher-order-function because it takes a function as input and/or returns a function as output. To elaborate further, if we call memoize, we’ll get another function that checks if a given parameter, n, is a key in cache and will return its corresponding value. What’s so special about this? Well it’s the fact that the returned function has cache in its scope where it can access or add properties! Moving forward, this can prove to be very powerful.
+
+For right now, the cache object will remain empty so let’s implement rule #2 in order to change that — “Use the input to execute any necessary computations, store the results in cache, return the result.”
