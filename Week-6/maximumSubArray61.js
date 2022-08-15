@@ -20,6 +20,6 @@ function maximumSubArray(array,size){
     console.log("end is "+ end);
 }
 
-var a = [-2, -3, 4, -1, -2, 1, 5, -3]
+var a = [1, 2, 3, 4, -10]
 var len = a.length;
 maximumSubArray(a,len);
