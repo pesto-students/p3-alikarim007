@@ -38,6 +38,5 @@ var head;
 		console.log("Given Linked list: ");
 		printList(head);
 		head = reverse(head);
-		// console.log("<br/>");
 		console.log("Reversed linked list: ");
 		printList(head);
