@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  body{
+    font-family: Verdana; 
+    color: #000000;
+  }
+.container{
+    /* position: absolute; */
+    background-color: bisque;
+    /* width: 100vw;
+    height: 100vh; */
+}
+.topParaCon{
+    background-color: rgb(21, 138, 138);
+    color: black;
+    width: 90%;
+    height: 20%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    padding: 1% 5%;
+    justify-content: space-around;
+}
+h2{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+h3{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.rightParaCon{
+    background-color: aqua;
+    margin: 10px 70px;
+    width: 40%;
+    height: 50%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+p{
+    margin: 10px 10px;
+}
+.imageLeft{
+    background-color: rgb(209, 209, 23);
+    margin: 10px 70px;
+    width: 40%;
+    height: 50%;
+    float: left;
+    margin-top: -342px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}

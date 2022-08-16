@@ -1,0 +1,80 @@
+div#main {
+    position: relative;
+    display: flex;
+    height: 200px;
+    width: 200px;
+    top: 200px;
+    margin: auto;
+    background-color: aquamarine;
+  }
+  div#main .red {
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    background: red;
+  }
+  div#main:hover .red {
+    transform: rotate(90deg);
+    transition: transform 1s ;
+    transform-origin: top left;
+    width: 100px;
+    height: 100px;
+  }
+  div#main .yellow {
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 0px;
+    background: yellow;
+  }
+  div#main:hover .yellow {
+    transform-origin: bottom left;
+    transform: rotate(-90deg);
+    transition: transform 1s ;
+    width: 100px;
+    height: 100px;
+  }
+  div#main .blue {
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: 100px;
+    background: blue;
+  }
+  div#main:hover .blue {
+    transform-origin: top right;
+    transform: rotate(-90deg);
+    transition: transform 1s ;
+    width: 100px;
+    height: 100px;
+  }
+  div#main .green {
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 100px;
+    background: green;
+  }
+  div#main:hover .green {
+    transform-origin: bottom right;
+    transform: rotate(90deg);
+    transition: transform 1s ;
+    width: 100px;
+    height: 100px;
+  }
+  
+  #p {
+    position: relative;
+    display: flex;
+    align-items: center;
+    left: 50%;
+  }
