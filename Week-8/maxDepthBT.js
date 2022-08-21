@@ -6,10 +6,7 @@
  *     this.right = (right===undefined ? null : right)
  * }
  */
-/**
- * @param {TreeNode} root
- * @return {number}
- */
+
  var maxDepth = function(root) {
     if(!root) return 0;
     let max = 1;
